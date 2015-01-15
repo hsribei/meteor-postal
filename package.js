@@ -1,7 +1,7 @@
 Package.describe({
   name: 'obvio171:postal',
   summary: 'Email automation. Send newsletters from /postal as admin (isAdmin: true).',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/obvio171/meteor-postal.git'
 });
 
