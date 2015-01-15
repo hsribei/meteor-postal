@@ -1,0 +1,28 @@
+<template name="postal">
+  <div class="container">
+    <div id="main" class="row row-fluid">
+      <div class="column col-sm-6 col-sm-offset-3">
+        {{#if currentUser.isAdmin}}
+          <h1>Send newsletter</h1>
+          <div class="form-group">
+            {{#autoForm schema=Meteor.Schema.Newsletters type="method"
+              meteormethod="sendNewsletter" id="sendNewsletterForm"
+              resetOnSuccess=true}}
+              <fieldset>
+                <legend>Compose email</legend>
+                {{> afQuickField name='from'}}
+                {{> afQuickField name='to' placeholder='Leave empty to send to all users.'}}
+                {{> afQuickField name='subject'}}
+              </fieldset>
+              {{> afQuickField name='text' rows=6}}
+
+              <button type="submit" class="btn btn-primary update-ride">Send newsletter</button>
+            {{/autoForm}}
+          </div>
+        {{else}}
+          You must log in as admin to see this page. Thank you!
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</template>
