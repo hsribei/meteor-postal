@@ -1,10 +1,10 @@
 # meteor-postal
 
-To install:
+## Step 1: Install:
 
     meteor add obvio171:postal
 
-To use:
+## Step 2: Set up:
 
 Have your `MAIL_URL` properly set up.
 
@@ -12,7 +12,11 @@ Only admins can send newsletters. Set the `isAdmin` property as true for the use
 
     db.users.update({_id: 'adminUserId'}, { $set: { isAdmin: true } });
 
-Then browse to `/postal` on your website and fire away.
+## Step 3: Have at it:
+
+Then browse to `/postal` on your website and fire away. This is what it looks like:
+
+![Talk to your users](http://i.imgur.com/skSrqJW.png)
 
 ## Roadmap
 
