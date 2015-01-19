@@ -14,7 +14,7 @@ Only admins can send newsletters. Set the `isAdmin` property as true for the use
 
 ## Step 3: Have at it:
 
-Then browse to `/postal` on your website and fire away. This is what it looks like:
+Browse to `/postal` on your website and fire away. This is what it looks like:
 
 ![Talk to your users](http://i.imgur.com/skSrqJW.png)
 
